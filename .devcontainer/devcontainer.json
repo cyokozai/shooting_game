@@ -1,0 +1,22 @@
+{
+  "name": "TinyGo Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "tinygo.vscode-tinygo"
+      ],
+      "settings": {
+        "go.toolsManagement.checkForUpdates": "proxy",
+        "go.gopath": "/go"
+      }
+    }
+  },
+  "remoteUser": "root",
+  "runArgs": [
+    "--privileged"
+  ]
+}
